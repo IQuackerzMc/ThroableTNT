@@ -1,7 +1,7 @@
 
 <?php
 declare(strict_types=1);
-namespace TNT;
+namespace ThroableTNT;
 use pocketmine\block\Solid;
 use pocketmine\entity\Entity;
 use pocketmine\entity\object\FallingBlock;
