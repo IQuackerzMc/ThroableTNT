@@ -23,18 +23,18 @@ class throabletnt extends PluginBase implements Listener {
          if($e->getItem()->getId() == 46){
              $nbt = new CompoundTag("", [
                             "Pos" => new ListTag("Pos", [
-                                new DoubleTag("", $player->x),
-                                new DoubleTag("", $player->y + $player->getEyeHeight()),
-                                new DoubleTag("", $player->z)
+                                new DoubleTag("", $player->x);
+                                new DoubleTag("", $player->y + $player->getEyeHeight());
+                                new DoubleTag("", $player->z);
                             ]),
                             "Motion" => new ListTag("Motion", [
-                                new DoubleTag("", -sin($player->yaw / 180 * M_PI) * cos($player->pitch / 180 * M_PI)),
-                                new DoubleTag("", -sin($player->pitch / 180 * M_PI)),
-                                new DoubleTag("", cos($player->yaw / 180 * M_PI) * cos($player->pitch / 180 * M_PI))
+                                new DoubleTag("", -sin($player->yaw / 180 * M_PI) * cos($player->pitch / 180 * M_PI);
+                                new DoubleTag("", -sin($player->pitch / 180 * M_PI));
+                                new DoubleTag("", cos($player->yaw / 180 * M_PI) * cos($player->pitch / 180 * M_PI));
                             ]),
                             "Rotation" => new ListTag("Rotation", [
-                                new FloatTag("", $player->yaw),
-                                new FloatTag("", $player->pitch)
+                                new FloatTag("", $player->yaw);
+                                new FloatTag("", $player->pitch);
                             ]),
                             ]);
                         $f = 2;
